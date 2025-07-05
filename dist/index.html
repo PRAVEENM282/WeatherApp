@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast App</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1><i class="fa-solid fa-cloud-sun"></i> Weather Forecast</h1>
+  </header>
+  <main>
+    <form id="search-form">
+      <input type="text" id="city-input" placeholder="Enter city..." required>
+      <button type="submit" title="Search"><i class="fa fa-search"></i></button>
+      <button type="button" id="geo-btn" title="Use my location"><i class="fa fa-location-crosshairs"></i></button>
+      <button type="button" id="unit-toggle" title="Toggle °C/°F"><span id="unit-label">°C</span></button>
+    </form>
+    <section id="current-weather"></section>
+    <section id="forecast"></section>
+    <div id="loading" class="hidden"><i class="fa fa-spinner fa-spin"></i> Loading...</div>
+    <div id="error" class="hidden"></div>
+  </main>
+  <footer>
+    <p>Powered by <a href="https://open-meteo.com/" target="_blank">Open-Meteo</a></p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html> 
