@@ -1,6 +1,6 @@
 # Weather Forecast App
 
-A simple, modern weather forecast app built from scratch.
+A simple, modern weather forecast app built from scratch. Using Venilla Javascript.
 
 ## Features
 - Search for any city
